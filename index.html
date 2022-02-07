@@ -64,24 +64,84 @@
 		</p>		
 		<p>
 			<label for="password">Password</label>
-			<input type="text" name="password" id="password"
+			<input type="password" name="password" id="password"
 			required
 			placeholder="qwe1234"
 			pattern="[a-z]{3}[0-9]{4}"
 			autocomplete="off"
 			>
 		</p>
-		
+		<p>
+			<label for="tel">Telefono</label>
+			<input type="tel" name="tel" id="tel"
+			required
+			placeholder="+573223456789"
+			autocomplete="on">
+		</p>
+		<p>
+			<label for="email">Email</label>
+			<input type="email" name="email" id="email"
+			required
+			autocomplete="on"
+			placeholder="email@email.com">
+		</p>
+		<p>
+			<label for="url">Pagina web</label>
+			<input type="url" name="url" id="url"
+			placeholder="www.html.com">
+		</p>
+		<p>
+			<label for="number">N°</label>
+			<input type="number" name="number" id="number"
+			min="1" max="10">
+		</p>
+		<p>
+			<label for="date">Fecha de entrega</label>
+			<input type="date" name="date" id="date"
+			min="2022-02-06">
+		</p>
+		<p>
+			<label for="color">Color</label>
+			<input type="color" name="color" id="color">
+		</p>
+		<p>
+			<label for="search">Buscar</label>
+			<input type="search" name="search" id="search">
+		</p>
+		<p>
+			<label for="range">Rango</label>
+			<input type="range" name="range" id="range"
+			min="1" max="10">
+		</p>
+		<p>
+			<fieldset>
+				<legend>Selecciona una prioridad</legend>
+					<p><label><input type="radio" name="priority" value="baja" checked>Baja</label></p>
+					<p><label><input type="radio" name="priority" value="media">Media</label></p>
+					<p><label><input type="radio" name="priority" value="alta">Alta</label></p>
+			</fieldset>
+		</p>
+		<p>
+			<fieldset>
+				<legend>Selecciona el tipo de envio</legend>
+				<p><label><input type="checkbox" name="delivery" value="urgente" checked>Urgente</label></p>
+				<p><label><input type="checkbox" name="delivery" value="acuse">Con acuse de envio</label></p>
+				<p><label><input type="checkbox" name="delivery" value="reembolso">Contra reembolso</label></p>
+			</fieldset>
+		</p>
 
 		<input type="submit" value="enviar">
+		<input type="reset" value="limpiar">
 	</form>
 
 
 
 </body>
 <br><br><br>
+
 <footer>
-	<h1><center>Esto es un ejemplo de footer con Html</center></h1>
+	<fieldset>
+		<h1><center>Esto es un ejemplo de footer con Html</center></h1>
+	</fieldset>
 </footer>
-<br><br><br>
 </html>
